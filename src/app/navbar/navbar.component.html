@@ -1,0 +1,55 @@
+<div class="pos-f-t" id="navbar" class="sticky">
+    <nav class="navbar navbar-dark navbar-custom">
+      <button class="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <ul class="list-group-horizontal navbar-nav ml-auto nav-flex-icons flex-row d-none d-md-flex navbar-nav">
+          <li class="list-group-item nav-item"><a [routerLink]="['/home']"> <span class="text-white h4"><i class="fa fa-bicycle" aria-hidden="true"></i> Home</span> </a></li>
+          <li class="list-group-item nav-item"><a [routerLink]="['/events']"> <span class="text-white h4"><i class="fa fa-calendar" aria-hidden="true"></i> Events</span> </a></li>
+          <li class="list-group-item nav-item dropdown">
+            <a href="info" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <span class="text-white h4"><i class="fa fa-info-circle" aria-hidden="true"></i> Rider Info</span> 
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="info">Information</a>
+              <a class="dropdown-item" href="info/photos">Photos</a>
+              <a class="dropdown-item" href="info/routes">Routes</a>
+            </div>
+          </li>
+          <li class="list-group-item nav-item"><a href="faqs"> <span class="text-white h4"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ</span> </a></li>
+          <li class="list-group-item nav-item"><a href="support"> <span class="text-white h4"><i class="fa fa-handshake" aria-hidden="true"></i> Support</span> </a></li>
+        </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons list-group-horizontal">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/groups/focobikemob" target="_blank">
+            <i class="fab fa-facebook-square" aria-hidden="true"></i>&nbsp;&nbsp;
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.meetup.com/focobikemob/" target="_blank">
+            <i class="fab fa-meetup" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="collapse d-md-none" id="navbarToggleExternalContent">
+      <div class=" navbar-custom p-4">
+        <a [routerLink]="['/home']">
+          <h5 class="text-white h4"><i class="fa fa-bicycle" aria-hidden="true"></i> Home</h5>
+        </a>
+        <a [routerLink]="['/events']">
+          <h5 class="text-white h4"><i class="fa fa-calendar" aria-hidden="true"></i> Events</h5>
+        </a>
+        <a href="info">
+          <h5 class="text-white h4"><i class="fa fa-info-circle" aria-hidden="true"></i> Rider Info</h5>
+        </a>
+        <a href="faqs">
+          <h5 class="text-white h4"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ</h5>
+        </a>
+        <a href="support">
+          <h5 class="text-white h4"><i class="fa fa-handshake" aria-hidden="true"></i> Support</h5>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="imageDiv"><a href="/home"><img class="img" src="assets/images/topdog_logo.png" alt="Foco Top Dog Logo"></a></div>
