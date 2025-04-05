@@ -1,0 +1,99 @@
+.top{
+    padding-top:7%;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    background-color: #AE4510;
+    color:white;
+    font-family: Helvetica,Arial,Lucida,sans-serif!important;
+    padding: 16px 30px 16px 30px;
+    font-size:15px;
+    font-weight:500;
+    border-radius:100px;
+    width: 50%;
+    margin-bottom:2%;
+    letter-spacing: 2px;
+    box-shadow: 0px 10px 20px 0px #994722;
+}
+h1{
+    letter-spacing: 5px;
+    font-size: 60px;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+
+.background{
+    /* background-color: #f3d373!important; */
+    color:white;
+    font-family: monospace;
+}
+
+.background:after{
+    content: '';
+    border-bottom-left-radius: 90% 100%;
+    border-bottom-right-radius: 90% 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 200%;
+    background-color: #f3d373;
+    height: 80%;
+    transform:translate(-50%, -50%);
+}
+.card{
+    width:80%;
+    border-radius:50px;
+    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),0 2px 2px hsl(0deg 0% 0% / 0.075),0 4px 4px hsl(0deg 0% 0% / 0.075),0 8px 8px hsl(0deg 0% 0% / 0.075),0 16px 16px hsl(0deg 0% 0% / 0.075);
+    margin: 0 auto; /* Added */
+    float: none; 
+}
+.overview{
+    padding-top:10%;
+   background-image: url(../../assets/images/odells_brewery2.jpg);
+   background-size: 100% 100%;
+   min-height:100vh;
+   position: relative;
+   z-index: -5;
+   transform: translateY(-8%);
+   
+}
+fa-icon{
+    color:#f3d373;
+    font-size:50px;
+    
+
+}
+fa-icon.smile{
+    font-size:20px;
+    color: black;
+}
+
+/* media css */
+@media only screen and (max-width: 1200px) {
+    .overview{
+        transform: translateY(-5%);
+        padding-top:10%;
+
+    } 
+  }
+@media only screen and (max-width: 1000px) {
+    .overview{
+        transform: translateY(-3%);
+        padding-top:15%;
+
+    } 
+  }
+@media only screen and (max-width: 800px) {
+    .overview{
+        transform: translateY(-2%);
+        padding-top:20%;
+    } 
+  }
+
+@media only screen and (max-width: 600px) {
+    .overview{
+        padding-top:30%;
+    }
+  }
