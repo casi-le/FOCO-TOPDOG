@@ -145,14 +145,15 @@ fa-icon.smile{
     position: absolute;
     z-index: -1;
     margin-bottom:10%;
-    width: 100%;
+    width: 200%;
     background: linear-gradient(  rgba(243, 211, 115,0.4), rgba(243, 211, 115,1));
-    height: 90%;
+    height:90%;
     transform-origin: left;
     transform:translateY(-95%) rotate(2deg);
 }
 .colorSection{
     min-height:600px;
+    overflow-x:clip;
 }
 
 /* media css */
