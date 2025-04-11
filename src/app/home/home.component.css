@@ -132,9 +132,14 @@ fa-icon.smile{
 }
 
 /* media css */
+@media only screen and (min-width: 2000px) {
+    .background:after{
+        height:75%;
+}
+  }
 @media only screen and (max-width: 1200px) {
     .background:after{
-            height:50%;
+            height:30%;
     }
     .overview{
         transform: translateY(-5%);
@@ -143,14 +148,14 @@ fa-icon.smile{
 
     } 
   }
-  @media only screen and (min-width: 2000px) {
+  @media only screen and (max-width: 1000px), screen and (max-height: 700px) {
     .background:after{
-        height:75%;
+        height:65%;
 }
-  }
+}
 @media only screen and (max-width: 1000px) {
     .background:after{
-        height:40%;
+        height:35%;
 }
     .overview{
         transform: translateY(-3%);
@@ -158,21 +163,48 @@ fa-icon.smile{
 
     } 
   }
+  @media only screen and (max-width: 800px), screen and (max-height: 700px) {
+    .background:after{
+        height:65%;
+}
+}
 @media only screen and (max-width: 800px) {
     .background:after{
-        height:40%;
+        height:50%;
 }
     .overview{
         transform: translateY(-2%);
         padding-top:20%;
+       
     } 
+    .btn{
+        width:80%;
+    }
+    .top{
+        padding-top:15%;
+    }
   }
+ 
 
 @media only screen and (max-width: 600px) {
     .background:after{
-        height:40%;
+        height:55%;
 }
     .overview{
         padding-top:30%;
     }
   }
+ 
+  @media only screen and (max-width: 400px) {
+    .background:after{
+        height:65%;
+}
+   
+  }
+  @media only  screen and (max-width: 350px) {
+    .background:after{
+        height:56%;
+}
+   
+  }
+
