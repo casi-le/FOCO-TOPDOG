@@ -1,6 +1,4 @@
-.top{
-    padding-top:7%;
-}
+
 .center{
     text-align: center;
 }
@@ -19,7 +17,7 @@
 }
 h1{
     letter-spacing: 5px;
-    font-size: 60px;
+    /* font-size: 60px; */
     line-height: 1.5em;
     font-weight: 700;
 }
@@ -60,25 +58,35 @@ h1{
     float: none; 
 }
 .overview{
-    padding-top:10%;
+    padding-top:13%;
    background-image: url(../../assets/images/odells_brewery2.jpg);
    background-size: 100% 100%;
    min-height:100vh;
    position: relative;
    z-index: -5;
    transform: translateY(-8%);
+   overflow-x:clip;
    
 }
 
 .instructions{
+    overflow-x:clip;
     background: linear-gradient(  rgba(243, 211, 115,0.8), rgba(243, 211, 115,1.5));
     min-height: 200px;
     /* padding-top:5%; */
     margin-top:-5%;
 
-    p{
-        width:50%;
-    }
+
+    
+}
+.fullWidth{
+    width:100%;
+}
+.circle{
+    background-color: #994722;
+    float:right;
+    transform: translate(35%, -70%);
+    aspect-ratio: 1 / 1;
 }
 .transition-instr{
     min-height:100px;
@@ -114,6 +122,7 @@ h1{
 }
 .instructions-content{
     padding: 0 5% 2% 5%;
+    overflow-y:clip;
 }
 fa-icon{
     color:#525252;
@@ -130,6 +139,21 @@ fa-icon.smile{
     font-size:20px;
     color: black;
 }
+.colorSection:before{
+    content:'';
+
+    position: absolute;
+    z-index: -1;
+    margin-bottom:10%;
+    width: 100%;
+    background: linear-gradient(  rgba(243, 211, 115,0.4), rgba(243, 211, 115,1));
+    height: 90%;
+    transform-origin: left;
+    transform:translateY(-95%) rotate(2deg);
+}
+.colorSection{
+    min-height:600px;
+}
 
 /* media css */
 @media only screen and (min-width: 2000px) {
@@ -143,14 +167,14 @@ fa-icon.smile{
     }
     .overview{
         transform: translateY(-5%);
-        padding-top:10%;
+        padding-top:13%;
         
 
     } 
   }
-  @media only screen and (max-width: 1000px), screen and (max-height: 700px) {
+  @media only  screen and (max-height: 750px) {
     .background:after{
-        height:65%;
+        height:60%;
 }
 }
 @media only screen and (max-width: 1000px) {
@@ -159,15 +183,11 @@ fa-icon.smile{
 }
     .overview{
         transform: translateY(-3%);
-        padding-top:15%;
+        padding-top:18%;
 
     } 
   }
-  @media only screen and (max-width: 800px), screen and (max-height: 700px) {
-    .background:after{
-        height:65%;
-}
-}
+ 
 @media only screen and (max-width: 800px) {
     .background:after{
         height:50%;
@@ -185,8 +205,12 @@ fa-icon.smile{
     }
   }
  
-
-@media only screen and (max-width: 600px) {
+  @media only screen and (max-height: 800px) {
+    .background:after{
+        height:61%;
+}
+}
+@media only screen and (max-width: 800px) {
     .background:after{
         height:55%;
 }
