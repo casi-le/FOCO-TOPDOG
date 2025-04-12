@@ -152,10 +152,23 @@ fa-icon.smile{
     transform:translateY(-95%) rotate(2deg);
 }
 .colorSection{
-    min-height:600px;
+    min-height:900px;
     overflow-x:clip;
 }
 
+.card-body{
+    h5{
+        text-align: center;
+    }
+    p{
+        padding-left:5%;
+        padding-right: 5%;
+    }
+    a{
+        padding:5%;
+    }
+
+}
 /* media css */
 @media only screen and (min-width: 2000px) {
     .background:after{
@@ -231,5 +244,16 @@ fa-icon.smile{
         height:56%;
 }
    
+  }
+
+
+
+
+  /* bootstrap 'fixes' */
+  .p-3{
+    padding:0 !important;
+    .card-body{
+        padding:0;
+    }
   }
 
