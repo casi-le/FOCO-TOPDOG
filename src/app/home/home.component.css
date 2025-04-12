@@ -217,6 +217,9 @@ fa-icon.smile{
     .top{
         padding-top:15%;
     }
+    .colorSection{
+        min-height:2500px;
+    }
   }
  
   @media only screen and (max-height: 800px) {
