@@ -1,5 +1,8 @@
+<div class="pt-5">
+    <h1 class="pt-5">Contact Us</h1>
+</div>
 <div class="section p-5">
-    <form class="p-3 col-sm-6"  [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <form class="p-3 col-sm-10"  [formGroup]="profileForm" (ngSubmit)="onSubmit()">
         <label for="name">Name: </label>
         <input class="contactInput" id="name" type="text" formControlName="name" required >
         <div class="invalid" *ngIf="profileForm.invalid && (profileForm.get('name')?.dirty || profileForm.get('name')?.touched)">

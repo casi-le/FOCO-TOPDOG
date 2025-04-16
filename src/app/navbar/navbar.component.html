@@ -3,31 +3,17 @@
       <button class="navbar-toggler d-block d-md-none" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-        <ul class="list-group-horizontal navbar-nav ml-auto nav-flex-icons flex-row d-none d-md-flex navbar-nav">
-          <li class="list-group-item nav-item"><a [routerLink]="['/home']"> <span class="text-white h4"><i class="fa fa-bicycle" aria-hidden="true"></i> Home</span> </a></li>
-          <li class="list-group-item nav-item"><a [routerLink]="['/events']"> <span class="text-white h4"><i class="fa fa-calendar" aria-hidden="true"></i> Events</span> </a></li>
-          <li class="list-group-item nav-item dropdown">
-            <a href="info" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               <span class="text-white h4"><i class="fa fa-info-circle" aria-hidden="true"></i> Rider Info</span> 
-              </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="info">Information</a>
-              <a class="dropdown-item" href="info/photos">Photos</a>
-              <a class="dropdown-item" href="info/routes">Routes</a>
-            </div>
-          </li>
-          <li class="list-group-item nav-item"><a href="faqs"> <span class="text-white h4"><i class="fa fa-question-circle" aria-hidden="true"></i> FAQ</span> </a></li>
-          <li class="list-group-item nav-item"><a href="support"> <span class="text-white h4"><i class="fa fa-handshake" aria-hidden="true"></i> Support</span> </a></li>
+        <ul class="list-group-horizontal navbar-nav ml-auto nav-flex-icons flex-row d-none d-md-flex navbar-nav nav">
+          <li class="list-group-item nav-item"><a [routerLink]="['/home']"> <span class="text-white h4"> Home</span> </a></li>
+          <li class="list-group-item nav-item"><a [routerLink]="['/events']"> <span class="text-white h4"> Events</span> </a></li>
+          <li class="list-group-item nav-item"><a [routerLink]="['/sponsors']"> <span class="text-white h4"> Sponsors</span> </a></li>
+          <li class="list-group-item nav-item"><a [routerLink]="['/faq']"> <span class="text-white h4"> FAQ</span> </a></li>
+          <li class="list-group-item nav-item"><a [routerLink]="['/contact']"> <span class="text-white h4"> Contact Us</span> </a></li>
         </ul>
       <ul class="navbar-nav ml-auto nav-flex-icons list-group-horizontal">
         <li class="nav-item">
-          <a class="nav-link" href="https://www.facebook.com/groups/focobikemob" target="_blank">
-            <i class="fab fa-facebook-square" aria-hidden="true"></i>&nbsp;&nbsp;
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.meetup.com/focobikemob/" target="_blank">
-            <i class="fab fa-meetup" aria-hidden="true"></i>
+          <a class="nav-link" href="https://www.instagram.com/focotopdog/?hl=en" target="_blank">
+            <fa-icon class="social-icon"  [icon]="faInstagram"></fa-icon>&nbsp;&nbsp;
           </a>
         </li>
       </ul>

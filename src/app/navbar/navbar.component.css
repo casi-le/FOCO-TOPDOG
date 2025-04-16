@@ -1,3 +1,6 @@
+#navbar{
+    color:#fff;
+}
 .sticky {
     position: fixed;
     top: 0;
@@ -10,11 +13,17 @@
     background-color: inherit;
     border: none;
     a{
+        text-decoration: none;
         span{
-            color:black !important;
+            color:#fff;
+            font-size:17px;
         }
     }
 
+}
+.social-icon{
+    font-size:30px;
+    color: #fff;
 }
 .navbar-custom{
     background-color: #f3d373;
@@ -38,9 +47,12 @@
     top: 0;
 
 }
-i,a{
-    color:black;
+ul.nav{
+    width: 90%;
+    justify-content: flex-end;
+    margin:0 !important;
 }
+
 .imageDiv{
     text-align: center;
     z-index: 9999;

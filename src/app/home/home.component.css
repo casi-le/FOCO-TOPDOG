@@ -130,6 +130,9 @@ fa-icon{
     
 
 }
+.clipX{
+    overflow-x: clip;
+}
 .circle-icon {
     background: #f3d373;
     padding:2%;
@@ -149,7 +152,7 @@ fa-icon.smile{
     background: linear-gradient(  rgba(243, 211, 115,0.4), rgba(243, 211, 115,1));
     height:90%;
     transform-origin: left;
-    transform:translateY(-95%) rotate(2deg);
+    transform:translateY(-95%) rotate(2deg) translateX(-10%);
 }
 .colorSection{
     min-height:900px;
