@@ -9,7 +9,6 @@ import { faPaw as faPaw} from '@fortawesome/free-solid-svg-icons';
 import { faFaceSmileWink as faFaceSmileWink} from '@fortawesome/free-solid-svg-icons';
 
 
-
 import * as myGlobals from '../globals'; //<==== this one (**Updated**)
 @Component({
   selector: 'app-home',
@@ -24,4 +23,5 @@ export class HomeComponent {
   }
   public ftdDate=myGlobals.ftdDate;
   public ftdLink = myGlobals.ftdLink;
+
 }
