@@ -1,0 +1,9 @@
+.carousel-inner{
+    img{
+        max-height:50vh;
+        width:auto;
+    }
+}
+.slide{
+    background-color: #f3d373;
+}

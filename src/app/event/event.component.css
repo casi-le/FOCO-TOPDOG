@@ -6,9 +6,7 @@ fa-icon{
     border-style: solid;
     border-width:0 0 5px 0;
     color: #994722;
-    padding-left:2%;
-    margin-left:3%;
-    margin-right:3%;
+    margin: 0 10%;
 }
 .text{
     color:black;
@@ -19,5 +17,8 @@ fa-icon{
 @media only  screen and (max-width: 800px) {
     fa-icon{
         font-size:50px;
+    }
+    .event{
+        margin: 0 1%;
     }
 }

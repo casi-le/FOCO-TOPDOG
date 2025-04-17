@@ -4,7 +4,7 @@
 }
 .photoSection{
     display:flex;
-    min-height:50vh;
+    min-height:70vh;
     padding-left:5%;
     img{
         max-height:50vh;
@@ -17,6 +17,7 @@
   }
   .fullPhoto{
     max-height:150px;
+    transform: translateY(30%);
   }
   .barrier{
     left: 0;
@@ -50,8 +51,12 @@
   .carouselSection{
     display:none;
   }
-
-  @media only  screen and (max-width: 750px){
+  @media only  screen and (max-width: 1200px){
+    .photoSection{
+        padding:0;
+    }
+  }
+  @media only  screen and (max-width: 1000px){
     .carouselSection{
         display:block;
     }
