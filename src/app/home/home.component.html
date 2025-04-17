@@ -113,3 +113,12 @@
     </div>
       
 </div>
+<div class="col-11 col-md-8 mx-auto">
+    <p-carousel [value]="photos" [numVisible]="2" [numScroll]="1"  [circular]="true" [responsiveOptions]="responsiveOptions">
+        <ng-template let-item pTemplate="item">
+            <img [src]="item.id" style="max-height:400px; margin:0 auto;">
+
+        </ng-template>
+    </p-carousel>
+</div>
+
