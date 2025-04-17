@@ -1,0 +1,61 @@
+.photoSection, .carouselSection{
+    background-color: #525252;;
+    background: linear-gradient(  rgba(82, 82, 82,1), rgba(82, 82, 82, .4));
+}
+.photoSection{
+    display:flex;
+    min-height:50vh;
+    padding-left:5%;
+    img{
+        max-height:50vh;
+    }
+}
+.carousel img {
+    max-height: 400px;
+    min-width: auto;
+    margin:auto;
+  }
+  .fullPhoto{
+    max-height:150px;
+  }
+  .barrier{
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg{
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+        }
+    
+  }
+  .aboveBarrier{
+    bottom: 0;
+    transform: rotate(180deg) translateY(-1%);
+    .shape-fill{
+        fill: #525252;
+    }
+  }
+  .belowBarrier{
+    top: 0;
+    svg{
+    height: 85px;
+    }
+    .shape-fill{
+        fill:rgba(82, 82, 82, .4);
+    }
+  }
+  .carouselSection{
+    display:none;
+  }
+
+  @media only  screen and (max-width: 750px){
+    .carouselSection{
+        display:block;
+    }
+    .photoSection{
+        display: none;
+    }
+  }

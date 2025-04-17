@@ -3,7 +3,7 @@ import {
   FontAwesomeModule,
   FaIconLibrary,
 } from '@fortawesome/angular-fontawesome';
-
+import { LabelCarouselComponent } from '../label-carousel/label-carousel.component';
 import { faThumbsUp as faThumbsUp} from '@fortawesome/free-solid-svg-icons';
 import { faPaw as faPaw} from '@fortawesome/free-solid-svg-icons';
 import { faFaceSmileWink as faFaceSmileWink} from '@fortawesome/free-solid-svg-icons';
@@ -12,7 +12,7 @@ import { faFaceSmileWink as faFaceSmileWink} from '@fortawesome/free-solid-svg-i
 import * as myGlobals from '../globals'; //<==== this one (**Updated**)
 @Component({
   selector: 'app-home',
-  imports: [FontAwesomeModule],
+  imports: [FontAwesomeModule, LabelCarouselComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
