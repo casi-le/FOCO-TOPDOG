@@ -1,0 +1,24 @@
+
+    img{
+    max-width:100%
+
+    }
+
+.container>a>img{
+    max-width:70%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row{
+    padding-bottom:10%;
+}
+h1{
+    font-size:calc(2rem + 3vw);
+}
+
+@media only  screen and (max-width: 1000px){
+    .container>a>img{
+        max-width:100%;
+    }
+  }
