@@ -71,6 +71,14 @@
   .carouselSection{
     display:none;
   }
+  .footerFix{
+    width:100%;
+    position:absolute;
+    min-height:10px;
+    background-color: #994722;
+    z-index:1;
+    transform: translateY(-50%);
+  }
   @media only  screen and (max-width: 1400px){
     .photoSection{
         padding:2%;
