@@ -81,6 +81,6 @@ export class EventCarouselComponent {
     for(var i = 0;i<this.photoList.length;i++){
       this.photoList[i]=dir+this.photoList[i];
     }
-    console.log(this.photoList)
+    // console.log(this.photoList)
   }
 }
