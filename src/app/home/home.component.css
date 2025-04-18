@@ -39,7 +39,7 @@ h1{
     top:0;
     width: 100%;
     background-color: #f3d373;
-    height: 45%;
+    height: 55%;
     
     transform:translate(-50%, 0.001%);
     overflow:hidden;
@@ -89,7 +89,7 @@ h1{
     padding-top:13%;
    background-image: url(../../assets/images/odells_brewery2.jpg);
    background-size: 100% 100%;
-   min-height:100vh;
+   /* min-height:100vh; */
    position: relative;
    z-index: -5;
    transform: translateY(-8%);
@@ -102,16 +102,15 @@ h1{
     background: linear-gradient(  rgba(243, 211, 115,0.8), rgba(243, 211, 115,1.5));
     min-height: 200px;
     /* padding-top:5%; */
-    margin-top:-5%;
-
-
+    /* margin-top:-2%; */
     
 }
+
 .circle{
     background-color: #994722;
     float:right;
     position:absolute;
-    transform: translate(95%, -80%);
+    transform: translate(95%, -90%);
     aspect-ratio: 1 / 1;
     z-index:0;
 }
@@ -150,6 +149,8 @@ h1{
 .instructions-content{
     padding: 0 5% 2% 5%;
     overflow-y:clip;
+    transform:translateY(-10%);
+
 }
 fa-icon{
     color:#525252;
@@ -160,10 +161,13 @@ fa-icon{
 .clipX{
     overflow-x: clip;
 }
+
 .circle-icon {
     background: #f3d373;
     padding:2%;
     border-radius: 50%;
+    margin-bottom:1rem;
+    margin-right:1rem;
 }
 fa-icon.smile{
     font-size:20px;
@@ -210,7 +214,24 @@ fa-icon.smile{
 /* media css */
 @media only screen and (min-width: 2000px) {
     .background:after{
-        height:75%;
+        height:25%;
+}
+  }
+  @media only screen and (min-width: 1500px) {
+    .background:after{
+        height:50%;
+}
+  }
+@media only screen and (min-width: 1500px) and (max-height:800px){
+    .background:after{
+        height:60%;
+    }
+
+}
+
+  @media only screen and (min-width: 1500px) and (min-height: 1000px) {
+    .background:after{
+        height:35%;
 }
   }
 @media only screen and (max-width: 1200px) {
@@ -224,11 +245,22 @@ fa-icon.smile{
 
     } 
   }
-  @media only  screen and (max-height: 750px) {
+  @media only screen and (max-width: 1200px) and (max-height:800px){
     .background:after{
-        height:60%;
+        height:50%;
 }
-}
+  }
+  @media only screen and (max-width: 1200px) and (min-height: 1500px){
+    .background:after{
+        height:25%;
+    }
+  }
+  @media only screen and (max-width: 1200px) and (max-height: 700px){
+    .background:after{
+        height:70%;
+    }
+  }
+
 @media only screen and (max-width: 1000px) {
     .background:after{
         height:35%;
@@ -239,10 +271,15 @@ fa-icon.smile{
 
     } 
   }
+  @media only screen and (max-width: 1000px) and (max-height:1000px){
+    .background:after{
+        height:48%;
+    }
+  }
  
 @media only screen and (max-width: 800px) {
     .background:after{
-        height:50%;
+        height:45%;
 }
     .overview{
         transform: translateY(-2%);
@@ -254,33 +291,49 @@ fa-icon.smile{
     }
 
   }
- 
-  @media only screen and (max-height: 800px) {
+  @media only screen and (max-width: 800px) and (max-height:1000px) {
     .background:after{
-        height:61%;
+        height:60%;
 }
-}
-@media only screen and (max-width: 800px) {
+
+  }
+  @media only screen and (max-width: 600px) {
     .background:after{
-        height:45%;
-}
-    .overview{
-        padding-top:35%;
+        height:50%;
+    }
+
+  }
+  @media only screen and (max-width: 400px){
+    .background:after{
+        height:50%;
     }
   }
+  @media only screen and (max-width: 400px) and (max-height:800px){
+    .background:after{
+        height:70%;
+         
+    }
+
+  }
+ /* @media only screen and (max-height: 800px) {
+    .background:after{
+        height:67%;
+}
+} */
+
  
-  @media only screen and (max-width: 400px) {
+  /* @media only screen and (max-width: 400px) {
     .background:after{
-        height:65%;
+        height:75%;
 }
    
-  }
-  @media only  screen and (max-width: 350px) {
+  } */
+  /* @media only  screen and (max-width: 350px) {
     .background:after{
-        height:46%;
+        height:56%;
 }
    
-  }
+  } */
 
 
 

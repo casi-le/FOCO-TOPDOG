@@ -1,39 +1,38 @@
 <div class="center pt-5 background">
     <h1 class="pt-5 center">FOCO TOP DOG</h1>
     <h3 class="center">Your dog on an O'Dell beer can!</h3>
-    <div class="d-flex justify-content-center"><button type="button" class="btn ftdBtn col-11 col-md-8">{{ftdDate}}</button></div>
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn ftdBtn col-11 col-md-8" [routerLink]="'/events'">{{ftdDate}}<sup>th</sup> {{ftdYear}}</button>
+    </div>
     <div class="b d-flex justify-content-center" >
         <a type="button" href="{{ftdLink}}" target="_blank" class="btn ftdBtn col-11 col-md-8" >Make your dog's page now!</a>
     </div>
 </div>
-<div class="overview pb-5">
-    <div class="d-flex p-2 row">
-        <div class="col-lg-6 col-md-6 col-sm-10">
-            <div class="card p-3">
+<div class="overview pb-5 mt-3 mb-5">
+    <div class="d-flex p-2 row m-3">
+        <div class="col-12">
+            <div class="p-4"> <h3>In Person Competition at ODells Brewing Company</h3>
+                    
+                Fort Collins is known for its dogs. Thousands of cute, cuddly pooches call this city home. However, the age-old question remains… Who is the top dog in Fort Collins?! Who is the leader of the pack? The best in show? We have teamed up with Odell Brewing to officially answer this question, and support good causes while doing it 
+                <fa-icon class="smile"  [icon]="['fas', 'face-smile-wink']"></fa-icon> .</div>
+        </div>
+    </div>
+    <div class="d-flex p-2 row  mb-5">
+        <div class="col-12 mb-5 px-xl-5 mx-auto">
+            <div class="card p-3 float-start  col-lg-5 col-12 mb-3">
                 <div class="card-body ">
-                    <h4>
-                    <fa-icon class="circle-icon"  [icon]="['fas', 'thumbs-up', ]"></fa-icon>
-                    It's Easy!</h4>
+                    <fa-icon class="circle-icon float-start"  [icon]="['fas', 'thumbs-up', ]"></fa-icon>
+
+                    <h4 class="col-8"> It's Easy!</h4>
                     <p>
                         All you need to do is create a fun profile for your dog and raise money for a good cause. Make sure to use your dog’s name in the profile instead of your own!
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-10">
-            <div class="p-4"> <h3>In Person Competition at ODells Brewing Company</h3>
-                    
-                Fort Collins is known for its dogs. Thousands of cute, cuddly pooches call this city home. However, the age-old question remains… Who is the top dog in Fort Collins?! Who is the leader of the pack? The best in show? We have teamed up with Odell Brewing to officially answer this question, and support a good cause while doing it 
-                <fa-icon class="smile"  [icon]="['fas', 'face-smile-wink']"></fa-icon> .</div>
-        </div>
-    </div>
-    
-    <div class="d-flex p-2 pb-5 row">
-        <div class="col-lg-6 col-md-6 col-sm-10">
-            <div class="card p-3">
+            <div class="card p-3 col-lg-7 col-12">
                 <div class="card-body">
+                    <fa-icon  class="circle-icon float-start" [icon]="['fas', 'paw']"></fa-icon>
                     <h4>
-                    <fa-icon  class="circle-icon" [icon]="['fas', 'paw']"></fa-icon>
                     The winner gets their dog’s image on an in-production run can of Odell beer</h4>
                     <p>
                         The winning dog will have their photo be forever enshrined on a can of Odell beer that they are creating just for this event! We will work with the owner on either selecting an appropriate photo, or taking one specifically for the prize.
@@ -41,27 +40,32 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-10 p-4">
-            <h3>Every dollar you fundraise on your page will count as one vote for your dog.</h3>
- The top 16 fundraisers and the most engaging social media star will get to move on to the in-person (in-pup) event at Odell Brewery in September.
-        </div>
+
     </div>
 </div>
 <div class="instructions">
     <div class="transition-instr"></div>
-    <div class="instructions-content col-12 col-sm-7">
-        <h2>Here’s how to do it:</h2>
-        <p>
-        The top 16 fundraisers and the most engaging social media star will get to move on to the in-person (in-pup) event at Odell Brewery in September.
-        </p>
-        
-        <div ><a href="/home"><img class="img col-12 " src="assets/images/hops-31495_1280.webp" alt="Hops Filigree"></a></div>
-        <div class="b  justify-content-center" >
+    <div class="instructions-content ">
+        <div class="col-12">
+            <div class="col-12 col-sm-6 mx-auto" ><img class="img col-12" src="assets/images/hops-31495_1280.webp" alt="Hops Filigree"></div>
+            <h2 class="col-sm-7 col-12">Want to Enter Your Dog in Top Dog 2025? Here&#39;s How It Works:</h2>
+            
+        </div>
+        <div class="b col-sm-6 col-12 justify-content-center my-3" >
                 <a type="button" href="{{ftdLink}}" target="_blank" class="btn ftdBtn col-12" >Design your dog's page here</a>
         </div>
-        <p>
-            se platea dictumst. Morbi facilisis, sem porta semper hendrerit, est erat ornare velit, vel auctor augue lectus sed massa. Aliquam erat volutpat. Fusce facilisis risus quis urna placerat volutpat. Suspendisse nulla mi, lobortis a ultricies volutpat, ornare vitae metus. Aenean nec semper libero. Morbi auctor eros mauris, ornare suscipit purus sagittis in. Sed sit amet dignissim mau
-        </p>
+       <div class="col-sm-6 col-12">
+           <ol class="fs-5">
+                <li class="py-1">Sign up your pup starting June 1st and start fundraising for your favorite local charity (you&#39;ll choose from dropdown list).</li>
+                <li class="py-1">
+                    Fundraise through August 31st. The 16 dogs who raise the most will each receive a prize package and a check from Top Dog made out to their chosen charity.
+                    <ul>
+                        <li>That means: 16 Dogs. 16 Charities. 16 Checks. </li>
+                    </ul>
+                </li>
+                <li class="py-1">Didn&#39;t make the Top 16? Don&#39;t worry—your impact still counts! All funds raised by dogs outside the Top 16 will go to this year’s primary beneficiary: &#64;animalfriendsalliance, a nonprofit saving thousands of local cats and dogs each year.</li>
+            </ol>
+       </div>
         
     </div>
 

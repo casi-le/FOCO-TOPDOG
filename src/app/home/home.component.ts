@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
 import {
   FontAwesomeModule,
   FaIconLibrary,
@@ -12,7 +14,7 @@ import { faFaceSmileWink as faFaceSmileWink} from '@fortawesome/free-solid-svg-i
 import * as myGlobals from '../globals'; //<==== this one (**Updated**)
 @Component({
   selector: 'app-home',
-  imports: [FontAwesomeModule, LabelCarouselComponent],
+  imports: [FontAwesomeModule, LabelCarouselComponent, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
@@ -23,5 +25,6 @@ export class HomeComponent {
   }
   public ftdDate=myGlobals.ftdDate;
   public ftdLink = myGlobals.ftdLink;
+  public ftdYear = myGlobals.ftdYear;
 
 }
