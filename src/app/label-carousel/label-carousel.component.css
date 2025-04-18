@@ -31,7 +31,25 @@
         width: calc(100% + 1.3px);
         height: 150px;
         }
-    
+
+  }
+  .background{
+    position:absolute;
+    transform:translateY(-100%);
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    svg{
+      height:100px;
+      width:100%;
+    }
+    .shape-fill{
+      fill: #994722;
+    }
+
+  }
+  .inverted {
+    filter:invert(100%)
   }
   .aboveBarrier{
     bottom: 0;

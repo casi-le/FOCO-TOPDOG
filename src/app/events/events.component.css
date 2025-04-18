@@ -2,3 +2,60 @@ h1{
     font-size:calc(2rem + 3vw);
     padding-left:3%;
 }
+
+
+.bottom-edge {
+  
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-bottom:2%;
+}
+
+.bottom-edge svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 40px;
+}
+
+.bottom-edge .shape-fill {
+    fill: #994722;
+}
+
+.top-edge {
+    
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.top-edge svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 40px;
+    transform: rotateY(180deg);
+}
+
+.top-edge .shape-fill {
+    fill: #994722;
+}
+
+@media only screen and (max-width: 1200px){
+    .bottom-edge{
+        transform:translateY(-5%);
+    }
+    .bottom-edge svg, .top-edge svg {
+        height:30px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .bottom-edge{
+        transform:translateY(-5%);
+    }
+    .bottom-edge svg, .top-edge svg {
+        height:20px;
+    }
+}
