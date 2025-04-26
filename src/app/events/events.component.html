@@ -20,6 +20,9 @@
 
 
 
-        <app-event *ngFor="let eventInfo of eventsInfo" [eventInfo]="eventInfo"></app-event>
+    <app-event *ngFor="let eventInfo of eventsInfo" [eventInfo]="eventInfo"></app-event>
+    <h2 class="pt-5 ps-5">Past Events</h2>
+    <app-event *ngFor="let eventInfo of pasteventsInfo" [eventInfo]="eventInfo"></app-event>
+
 </div>
 <div class="prefooter prefooter1"></div>

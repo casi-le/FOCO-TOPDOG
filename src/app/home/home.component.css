@@ -114,6 +114,12 @@ h1{
     aspect-ratio: 1 / 1;
     z-index:0;
 }
+.yellowFont{
+    color: #f0c74d;
+}
+.bigFont{
+    font-size:15em;
+}
 .transition-instr{
     min-height:100px;
     position:relative;

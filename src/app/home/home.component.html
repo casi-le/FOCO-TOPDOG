@@ -1,6 +1,6 @@
 <div class="center pt-5 background">
     <h1 class="pt-5 center">FOCO TOP DOG</h1>
-    <h3 class="center">Your dog on an O'Dell beer can!</h3>
+    <h3 class="center">Your dog on an Odell beer can!</h3>
     <div class="d-flex justify-content-center">
         <button type="button" class="btn ftdBtn col-11 col-md-8" [routerLink]="'/events'">{{ftdDate}}<sup>th</sup> {{ftdYear}}</button>
     </div>
@@ -11,7 +11,7 @@
 <div class="overview pb-5 mt-3 mb-5">
     <div class="d-flex p-2 row m-3">
         <div class="col-12">
-            <div class="p-4"> <h3>In Person Competition at ODells Brewing Company</h3>
+            <div class="p-4"> <h3>In Person Competition at Odell Brewing Company</h3>
                     
                 Fort Collins is known for its dogs. Thousands of cute, cuddly pooches call this city home. However, the age-old question remains… Who is the top dog in Fort Collins?! Who is the leader of the pack? The best in show? We have teamed up with Odell Brewing to officially answer this question, and support good causes while doing it 
                 <fa-icon class="smile"  [icon]="['fas', 'face-smile-wink']"></fa-icon> .</div>
@@ -75,7 +75,8 @@
 
 </div>
 <div class="col-12 clipX inbetween">
-    <div class="col-sm-7 circle rounded-circle"></div>
+    <div class="col-sm-7 circle rounded-circle justify-content-center d-flex"> 
+        <fa-icon  class="yellowFont float-none m-auto align-middle bigFont" [icon]="['fas', 'paw']"></fa-icon></div>
 </div>
 <div class="colorSection container">
     <div class="">
@@ -84,7 +85,7 @@
                 <div class="card card-pink p-3">
                     <img class="card-img-top" src="assets/images/afa_logo.png" alt="AFA Logo">
                     <div class="card-body pt-1 ">
-                        <h5 class="card-title">Beneficiary</h5>
+                        <h5 class="card-title">Primary Beneficiary</h5>
                         <h6>Animal Friends Alliance</h6>
                         <p class="card-text">
                             Animal Friends Alliance emerged in January 2020 from the union of Fort Collins Cat Rescue & Spay/Neuter Clinic and Animal House Rescue & Grooming. The two joined forces to amplify our organization&#39;s community impact and allow our programs and services to benefit more people and animals.
@@ -106,11 +107,11 @@
                 </div>
             </div><div class="col-12 col-md-4 p-2  bd-highlight">
                 <div class="card card-blue p-3">
-                    <img class="card-img-top" src="assets/images/odells_brewery.jpg" alt="ODells Brewery">
+                    <img class="card-img-top" src="assets/images/odells_brewery.jpg" alt="ODell Brewery">
                     <div class="card-body pt-1 ">
                         <h5 class="card-title">In Person Event</h5>
                         <p class="card-text">
-                            September The top 16 fundraisers will get to go to the in person competition. ODells is our wonderful partner and host. This won&#39;t be an AKC dog show or a trick competition. The event will be designed to be fun and accessible by all pups! Events will include: strutting down the catwalk (*ahem* dogwalk!), sinners vs. saints (will your dog choose you or bacon?), poop bag toss, and more!    
+                            {{ftdDate}}<sup>th</sup> {{ftdYear}} The top 16 fundraisers will get to go to the in person competition. Odell is our wonderful partner and host. This won&#39;t be an AKC dog show or a trick competition. The event will be designed to be fun and accessible by all pups! Events will include: strutting down the catwalk (*ahem* dogwalk!), sinners vs. saints (will your dog choose you or bacon?), poop bag toss, and more!    
                         </p>
                         <a  target="_blank" href="https://www.odellbrewing.com/locations/fort-collins/" class="btn btn-primary cardBtn">View More Info</a>
                     </div>
