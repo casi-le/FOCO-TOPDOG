@@ -117,8 +117,14 @@ h1{
 .yellowFont{
     color: #f0c74d;
 }
+.brownFont{
+    color: #994722;
+}
 .bigFont{
     font-size:15em;
+}
+.pawTrailPadding{
+    margin-top:-5%;
 }
 .transition-instr{
     min-height:100px;
@@ -167,7 +173,10 @@ fa-icon{
 .clipX{
     overflow-x: clip;
 }
-
+.pawsMobile{
+    display:none !important;
+    
+}
 .circle-icon {
     background: #f3d373;
     padding:2%;
@@ -227,6 +236,10 @@ fa-icon.smile{
     .background:after{
         height:50%;
 }
+.pawTrailPadding{
+    margin-top:-15%;
+}
+
   }
 @media only screen and (min-width: 1500px) and (max-height:800px){
     .background:after{
@@ -247,9 +260,11 @@ fa-icon.smile{
     .overview{
         transform: translateY(-5%);
         padding-top:13%;
-        
-
     } 
+    .pawTrailPadding{
+        margin-top:0;
+        padding-top:20%;
+    }
   }
   @media only screen and (max-width: 1200px) and (max-height:800px){
     .background:after{
@@ -271,6 +286,16 @@ fa-icon.smile{
     .background:after{
         height:35%;
 }
+.pawsMobile{
+    display:flex !important;
+    
+}
+.bigFont{
+    font-size: 12em;;
+}
+.notPawsTrailMobile{
+    display:none !important;
+}
     .overview{
         transform: translateY(-3%);
         padding-top:18%;
@@ -282,11 +307,22 @@ fa-icon.smile{
         height:48%;
     }
   }
- 
+ @media only screen and (max-width: 900px){
+
+
+ }
 @media only screen and (max-width: 800px) {
     .background:after{
         height:45%;
 }
+.notMobile{
+    display:none !important;
+}
+.pawsMobile{
+    display:flex !important;
+    
+}
+
     .overview{
         transform: translateY(-2%);
         padding-top:20%;
@@ -307,12 +343,18 @@ fa-icon.smile{
     .background:after{
         height:50%;
     }
+    .pawsMobile{
+        display:none !important;
+        
+    }
+
 
   }
   @media only screen and (max-width: 400px){
     .background:after{
         height:50%;
     }
+
   }
   @media only screen and (max-width: 400px) and (max-height:800px){
     .background:after{
