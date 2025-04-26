@@ -296,6 +296,7 @@ fa-icon.smile{
 .notPawsTrailMobile{
     display:none !important;
 }
+
     .overview{
         transform: translateY(-3%);
         padding-top:18%;
@@ -320,7 +321,11 @@ fa-icon.smile{
 }
 .pawsMobile{
     display:flex !important;
+    margin-top:-15%;
     
+}
+.doubleWidthMed{
+    width:200%;
 }
 
     .overview{
@@ -339,13 +344,22 @@ fa-icon.smile{
 }
 
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px){
+    .pawsMobile{
+        margin-top:2%;
+        
+    }
+  }
+  @media only screen and (max-width: 576px) {
     .background:after{
         height:50%;
     }
     .pawsMobile{
         display:none !important;
         
+    }
+    .doubleWidthMed{
+        width:100%;
     }
 
 
