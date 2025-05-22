@@ -17,9 +17,37 @@ h1{
     font-size: calc(2rem + 3vw);
     padding-left: 3%;
 }
-
+.headerEnd {
+    position: absolute;
+    width: 100%;
+    transform:translateY(20%);
+}
+.solid{
+    background-color: #f3d373;
+    height:1vh;
+}
+.mobileHeader{
+    display:none;
+}
 @media only  screen and (max-width: 1000px){
     .container>a>img{
         max-width:100%;
+    }
+    .headerEnd{
+        transform: translateY(38%);
+    }
+  }
+  @media only  screen and (max-width: 800px){
+    .container>a>img{
+        max-width:100%;
+    }
+    .headerEnd{
+        transform: translateY(-8px);
+    }
+    .mobileHeader{
+        display:block;
+    }
+    .desktopHeader{
+        display:none;
     }
   }

@@ -251,7 +251,7 @@ fa-icon.smile{
   @media only screen and (min-width: 1500px) and (min-height: 1000px) {
     .background:after{
         height:35%;
-}
+    }
   }
 @media only screen and (max-width: 1200px) {
     .background:after{
@@ -269,7 +269,7 @@ fa-icon.smile{
   @media only screen and (max-width: 1200px) and (max-height:800px){
     .background:after{
         height:50%;
-}
+    }
   }
   @media only screen and (max-width: 1200px) and (min-height: 1500px){
     .background:after{
@@ -281,22 +281,29 @@ fa-icon.smile{
         height:70%;
     }
   }
+  @media only screen and (max-width:1100px){
+    .pawsMobile{
+        display:flex !important;
+        margin-top:-5%
+        
+    }
+    .notPawsTrailMobile{
+        display:none !important;
+    }
+  }
 
 @media only screen and (max-width: 1000px) {
     .background:after{
         height:35%;
-}
-.pawsMobile{
-    display:flex !important;
-    
-}
-.bigFont{
-    font-size: 12em;;
-}
-.notPawsTrailMobile{
-    display:none !important;
-}
+    }
+    .pawsMobile{
+        margin-top:-0%
+        
+    }
 
+    .bigFont{
+        font-size: 12em;;
+    }
     .overview{
         transform: translateY(-3%);
         padding-top:18%;

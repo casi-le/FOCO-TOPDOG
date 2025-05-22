@@ -3,4 +3,8 @@
     min-height: 50px;
     background-color: #994722;
     padding:3%;
+    color:#fff;
+    a{
+        color:#FFF;
+    }
 }

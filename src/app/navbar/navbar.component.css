@@ -1,5 +1,6 @@
 #navbar{
     color:#fff;
+    background-color:#f3d373;
 }
 .sticky {
     position: fixed;
@@ -12,14 +13,25 @@
 .list-group-item{
     background-color: inherit;
     border: none;
+    font-size:17px;
+
+
     a{
         text-decoration: none;
+        font-size:17px;
+
         span{
             color:#fff;
             font-size:17px;
         }
     }
 
+}
+.dropdown-toggle::after{
+    color:#fff;
+}
+.dropdown-item:hover{
+    background-color: #994722;
 }
 .social-icon{
     font-size:30px;
@@ -29,6 +41,13 @@
     background-color: #f3d373;
     /* background-image: linear-gradient(to right, #e7717d, #e9828c, #eb939b, #eba4aa, #ebb4b9); */
     /* background-image: linear-gradient(to right, #e9828c, #e9838d, #e9838d, #e9848e, #e9848e, #e98791, #ea8a93, #ea8d96, #ea939b, #eb99a0, #eb9ea5, #eba4aa); */
+}
+.navbar-custom .dropdown-menu{
+    position:absolute;
+    .dropdown-item{
+        color:#fff;
+
+    }
 }
 .colorChange>.navbar-custom{
     /* background: rgb(255,105180); */
@@ -109,7 +128,11 @@ ul.nav{
         margin-left:1%;
       }
       .imageDiv {
-        display:none;
+        transform:translate(35vw, -100%);
+        /* position:relative; */
+        max-width: 100px;
+        max-height:80px;
+        position:absolute;
       }
 
 }
