@@ -18,7 +18,10 @@ export class AppComponent {
             if (!(evt instanceof NavigationEnd)) {
                 return;
             }
-            window.scrollTo(0, 0) // for example
+            if (typeof window !== "undefined") {
+              window.scrollTo(0, 0) // for example
+
+           }
         });
     }
 }
