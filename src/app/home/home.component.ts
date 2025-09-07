@@ -26,5 +26,7 @@ export class HomeComponent {
   public ftdDate=myGlobals.ftdDate;
   public ftdLink = myGlobals.ftdLink;
   public ftdYear = myGlobals.ftdYear;
+  public ftdTime = myGlobals.ftdTime;
+
 
 }

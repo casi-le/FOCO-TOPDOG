@@ -2,7 +2,7 @@
     <h1 class="pt-5 center">FOCO TOP DOG</h1>
     <h3 class="center">Your dog on an Odell beer can!</h3>
     <div class="d-flex justify-content-center">
-        <button type="button" class="btn ftdBtn col-11 col-md-8" [routerLink]="'/events'">{{ftdDate}}<sup>th</sup> {{ftdYear}}</button>
+        <button type="button" class="btn ftdBtn col-11 col-md-8" [routerLink]="'/events'">{{ftdDate}}<sup>th</sup> {{ftdYear}}  {{ftdTime}} </button>
     </div>
     <div class="b d-flex justify-content-center" >
         <a type="button" href="{{ftdLink}}" target="_blank" class="btn ftdBtn col-11 col-md-8" >Make your dog's page now!</a>
@@ -170,7 +170,7 @@
                     <div class="card-body pt-1 ">
                         <h5 class="card-title">In Person Event</h5>
                         <p class="card-text">
-                            {{ftdDate}}<sup>th</sup> {{ftdYear}} The top 16 fundraisers will get to go to the in person competition. Odell is our wonderful partner and host. This won&#39;t be an AKC dog show or a trick competition. The event will be designed to be fun and accessible by all pups! Events will include: strutting down the catwalk (*ahem* dogwalk!), sinners vs. saints (will your dog choose you or bacon?), poop bag toss, and more!    
+                            {{ftdDate}}<sup>th</sup> {{ftdYear}} {{ftdTime}} The top 16 fundraisers will get to go to the in person competition. Odell is our wonderful partner and host. This won&#39;t be an AKC dog show or a trick competition. The event will be designed to be fun and accessible by all pups! Events will include: strutting down the catwalk (*ahem* dogwalk!), sinners vs. saints (will your dog choose you or bacon?), poop bag toss, and more!    
                         </p>
                         <a  target="_blank" href="https://www.odellbrewing.com/locations/fort-collins/" class="btn btn-primary cardBtn">View More Info</a>
                     </div>
