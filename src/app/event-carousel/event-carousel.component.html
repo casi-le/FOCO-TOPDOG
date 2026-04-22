@@ -1,19 +1,21 @@
 <div class="carouselSection p-2">
 
-    <div id="{{id}}" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div *ngFor="let photo of photoList; let first = first" class="carousel-item" [ngClass]="{ 'active': first }">
-                    <img src="/assets/images/{{photo}}" class="d-block" alt="...">
-                  </div>
-            </div>
+  <div id="{{id}}" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      @for (photo of photoList; track photo; let first = $first) {
+        <div class="carousel-item" [ngClass]="{ 'active': first }">
+          <img src="/assets/images/{{photo}}" class="d-block" alt="...">
+        </div>
+      }
+    </div>
 
-        <button class="carousel-control-prev" type="button" attr.data-bs-target="#{{id}}"  data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" attr.data-bs-target="#{{id}}" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    <button class="carousel-control-prev" type="button" attr.data-bs-target="#{{id}}"  data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" attr.data-bs-target="#{{id}}" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </div>

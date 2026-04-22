@@ -1,42 +1,46 @@
 <div class="aboveBarrier barrier">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
-    </svg>
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+  </svg>
 </div>
 <div class="photoSection">
-    <div class="fullPhoto col-sm-3" *ngFor="let photo of photoList; let first = first">
-        <img  src="../../assets/images/dog_labels/{{photo}}" class="d-block" alt="...">
+  @for (photo of photoList; track photo; let first = $first) {
+    <div class="fullPhoto col-sm-3">
+      <img  src="../../assets/images/dog_labels/{{photo}}" class="d-block" alt="...">
     </div>
+  }
 </div>
 <div class="carouselSection p-2">
 
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div *ngFor="let photo of photoList; let first = first" class="carousel-item" [ngClass]="{ 'active': first }">
-                    <img src="../../assets/images/dog_labels/{{photo}}" class="d-block" alt="...">
-                  </div>
-            </div>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      @for (photo of photoList; track photo; let first = $first) {
+        <div class="carousel-item" [ngClass]="{ 'active': first }">
+          <img src="../../assets/images/dog_labels/{{photo}}" class="d-block" alt="...">
+        </div>
+      }
+    </div>
 
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </div>
 <div class="belowBarrier barrier">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
-    </svg>
-   
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M1200 0L0 0 598.97 114.72 1200 0z" class="shape-fill"></path>
+  </svg>
+
 </div>
 <div class="background">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
-    </svg>
+  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+  </svg>
 </div>
 <div class="footerFix">
 

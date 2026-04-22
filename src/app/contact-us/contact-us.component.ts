@@ -1,11 +1,11 @@
-import { NgIf } from '@angular/common';
+
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { EmailService } from '../email.service';
 
 @Component({
   selector: 'app-contact-us',
-  imports: [ReactiveFormsModule, NgIf],
+  imports: [ReactiveFormsModule],
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.css'
 })

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { EventComponent } from '../event/event.component';
-import { CommonModule } from '@angular/common'
+
 @Component({
   selector: 'app-events',
-  imports: [EventComponent, CommonModule],
+  imports: [EventComponent],
   templateUrl: './events.component.html',
   styleUrl: './events.component.css'
 })

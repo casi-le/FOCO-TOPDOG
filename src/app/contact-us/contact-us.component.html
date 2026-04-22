@@ -1,21 +1,31 @@
 <div class="pt-5">
-    <h1 class="pt-5">Contact Us</h1>
+  <h1 class="pt-5">Contact Us</h1>
 </div>
 <div class="section p-5">
-    <form class="p-3 col-sm-10"  [formGroup]="profileForm" (ngSubmit)="onSubmit()">
-        <label for="name">Name: </label>
-        <input class="contactInput" id="name" type="text" formControlName="name" required >
-        <div class="invalid" *ngIf="profileForm.invalid && (profileForm.get('name')?.dirty || profileForm.get('name')?.touched)">
-            <div *ngIf="profileForm.get('name')?.hasError('required')">Name is required.</div>
-        </div>
-        <label for="email">Email: </label>
-        <input class="contactInput" id="email" type="email" formControlName="email" required>
-        <div class="invalid" *ngIf="profileForm.invalid && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)">
-            <div *ngIf="profileForm.get('email')?.hasError('required')">Email isn required</div>
-            <div *ngIf="profileForm.get('email')?.hasError('email')">Email isn't the correct format.</div>
-        </div>
-        <button class="btn" type="submit" [disabled]="!profileForm.valid">Submit</button>
-    </form>
-    
+  <form class="p-3 col-sm-10"  [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name: </label>
+    <input class="contactInput" id="name" type="text" formControlName="name" required >
+    @if (profileForm.invalid && (profileForm.get('name')?.dirty || profileForm.get('name')?.touched)) {
+      <div class="invalid">
+        @if (profileForm.get('name')?.hasError('required')) {
+          <div>Name is required.</div>
+        }
+      </div>
+    }
+    <label for="email">Email: </label>
+    <input class="contactInput" id="email" type="email" formControlName="email" required>
+    @if (profileForm.invalid && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)) {
+      <div class="invalid">
+        @if (profileForm.get('email')?.hasError('required')) {
+          <div>Email isn required</div>
+        }
+        @if (profileForm.get('email')?.hasError('email')) {
+          <div>Email isn't the correct format.</div>
+        }
+      </div>
+    }
+    <button class="btn" type="submit" [disabled]="!profileForm.valid">Submit</button>
+  </form>
+
 </div>
 <div class="prefooter prefooter1"></div>
