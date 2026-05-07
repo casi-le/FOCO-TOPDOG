@@ -1,0 +1,43 @@
+.label{
+    img{
+         max-height:30vh;
+        width:auto;
+        margin:auto;
+    }
+   
+}
+.labelleft{
+float:right;
+}
+.labelright{
+    float:left;
+}
+.clear{
+    clear:right;
+    clear:left;
+}
+.winner{
+        border-style: solid;
+    border-width:0 0 5px 0;
+    color: #994722;
+    margin: 0 10%;
+}
+.container{
+    max-width:100% !important;
+}
+@media only  screen and (max-width: 800px) {
+    fa-icon{
+        font-size:50px;
+    }
+    .winner{
+        margin: 0 1%;
+    }
+    .labelleft,.labelright{
+        float:none;
+    }
+    .label img{
+        max-width:70vw;
+        height:auto;
+        margin:0;
+    }
+}

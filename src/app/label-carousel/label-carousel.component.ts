@@ -13,7 +13,8 @@ export class LabelCarouselComponent {
       'blue_logo.png',
       'knox_label.png',
       'wash_label.png',
-      'zirkel_label.png'
+      'zirkel_label.png',
+      'rocco_label.jpg'
       ]
   }
 }

@@ -1,0 +1,15 @@
+.line{
+    border-style: solid;
+    border-width:0 0 5px 0;
+    color: #994722;
+    margin-bottom:2%;
+}
+.headerLine{
+    margin-bottom:5%;
+}
+.breakLine{
+    margin-top:2%;
+}
+.coloredText{
+    color: #994722;;
+}
