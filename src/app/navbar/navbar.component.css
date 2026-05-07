@@ -49,6 +49,23 @@
 
     }
 }
+.navbar-mobile{
+    li{
+        padding:.5rem !important;
+        width:80vw;
+        a{ display:inline-block;
+            width:100%;
+            span{
+                font-size:25px;
+            }
+        }
+        a.dropdown-item{
+            span{
+                font-size:20px;
+            }
+        }
+    }
+}
 .colorChange>.navbar-custom{
     /* background: rgb(255,105180); */
     /* background: linear-gradient(90deg, rgba(255,105,180,1) 0%, rgba(209,64,137,1) 35%, rgba(208,22,115,1) 100%); */
