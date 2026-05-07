@@ -9,11 +9,11 @@ import { PastWinnerComponent } from '../past-winner/past-winner.component';
 })
 export class PastWinnersComponent {
   pastwinnersInfo=[
-    {'name':'Washburne', 'year': '2021', 'label':'Washburne Label.png', 'photo':'washburne_photo.jpg'},
-    {'name': 'Knox', 'year': '2022', 'label':'Knox-Top-Dog-Label.png', 'photo':'knox_photo.jpg'},
-    {'name':'Blue', 'year':'2023', 'label':'Blue 2023 Label.png', 'photo':'blue_photo.jpg'},
-    {'name':'Zirkel', 'year':'2024', 'label':'2024 Zirkel.jpg', 'photo':'zirkel_photo.jpg'},
-    {'name':'Rocco', 'year':'2025', 'label':'2025 Rocco.jpg', 'photo':''}
+    {'name':'Washburne', 'year': '2021'},
+    {'name': 'Knox', 'year': '2022'},
+    {'name':'Blue', 'year':'2023'},
+    {'name':'Zirkel', 'year':'2024'},
+    {'name':'Rocco', 'year':'2025'}
   ];
 
 }

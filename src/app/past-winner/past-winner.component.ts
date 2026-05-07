@@ -8,4 +8,12 @@ import { Component, Input } from '@angular/core';
 })
 export class PastWinnerComponent {
 @Input() pastwinnerInfo:any;
+winnerPhoto="";
+winnerLabel="";
+   ngOnInit(){
+
+    this.winnerPhoto=this.pastwinnerInfo.name+'_photo.jpg';
+    console.log(this.winnerPhoto)
+    this.winnerLabel=this.pastwinnerInfo.name+'_label.jpg';
+  }
 }
