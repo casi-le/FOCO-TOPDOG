@@ -2,7 +2,10 @@ h1{
     font-size:calc(2rem + 3vw);
     padding-left:3%;
 }
-
+.helpText{
+    color:#994722;;
+    font-size:large;
+}
 
 .bottom-edge {
     width: 100%;
