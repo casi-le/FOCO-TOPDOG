@@ -17,6 +17,6 @@ export class EventsComponent {
 
   ]
   pasteventsInfo=[
-    {'icon': 'faYinYang', 'title':'Sinners vs. Saints','details': "In previous years, the Final Four showdown was our Sinners vs Saints challenge—a hilarious stage event where pups had to choose between their humans and a tasty treat. But this year? We're shaking things up. The theme and format for 2025's Final Four are still under wraps, but one thing’s for sure: it’ll be fun, dog-friendly, and audience-driven. Whether you're in it to win it or just there for the laughs, the energy is always high and the crowd plays a huge role in choosing who makes it to the final round. Stay tuned for what’s in store!", 'photos': 'todo'}
+    {'icon': 'faYinYang', 'title':'Sinners vs. Saints','details': "In previous years, the Final Four showdown was our Sinners vs Saints challenge—a hilarious stage event where pups had to choose between their humans and a tasty treat. But this year? We're shaking things up. The theme and format for this year's Final Four are still under wraps, but one thing’s for sure: it’ll be fun, dog-friendly, and audience-driven. Whether you're in it to win it or just there for the laughs, the energy is always high and the crowd plays a huge role in choosing who makes it to the final round. Stay tuned for what’s in store!", 'photos': 'todo'}
   ]
 }

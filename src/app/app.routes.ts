@@ -8,6 +8,7 @@ import { FaqComponent } from './faq/faq.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { PastWinnersComponent } from './past-winners/past-winners.component';
 import { SponsorHowtoComponent } from './sponsor-howto/sponsor-howto.component';
+import { HowToComponent } from './how-to/how-to.component';
 
 export const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -18,5 +19,7 @@ export const routes: Routes = [
   {path: 'aboutus', component: AboutUsComponent},
   {path: 'pastwinners', component: PastWinnersComponent},
   {path:'sponsorhowto', component:SponsorHowtoComponent},
+  {path:'howto', component:HowToComponent},
+
   {path: '', component: HomeComponent}
 ];
