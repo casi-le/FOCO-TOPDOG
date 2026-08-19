@@ -26,7 +26,7 @@ h1{
     /* background-color: #f3d373!important; */
     color:white;
     font-family: monospace;
-    overflow:hidden;
+    /* overflow:hidden; */
 }
 
 .background:after{
@@ -39,7 +39,7 @@ h1{
     top:0;
     width: 100%;
     background-color: #f3d373;
-    height: 55%;
+    height: 65%;
     
     transform:translate(-50%, 0.001%);
     overflow:hidden;
@@ -229,12 +229,12 @@ fa-icon.smile{
 /* media css */
 @media only screen and (min-width: 2000px) {
     .background:after{
-        height:25%;
+        height:35%;
 }
   }
   @media only screen and (min-width: 1500px) {
     .background:after{
-        height:50%;
+        height:60%;
 }
 .pawTrailPadding{
     margin-top:-15%;
@@ -243,19 +243,19 @@ fa-icon.smile{
   }
 @media only screen and (min-width: 1500px) and (max-height:800px){
     .background:after{
-        height:60%;
+        height:70%;
     }
 
 }
 
   @media only screen and (min-width: 1500px) and (min-height: 1000px) {
     .background:after{
-        height:35%;
+        height:45%;
     }
   }
 @media only screen and (max-width: 1200px) {
     .background:after{
-            height:30%;
+            height:40%;
     }
     .overview{
         transform: translateY(-5%);
@@ -268,17 +268,17 @@ fa-icon.smile{
   }
   @media only screen and (max-width: 1200px) and (max-height:800px){
     .background:after{
-        height:50%;
+        height:60%;
     }
   }
   @media only screen and (max-width: 1200px) and (min-height: 1500px){
     .background:after{
-        height:25%;
+        height:35%;
     }
   }
   @media only screen and (max-width: 1200px) and (max-height: 700px){
     .background:after{
-        height:70%;
+        height:80%;
     }
   }
   @media only screen and (max-width:1100px){
@@ -294,7 +294,7 @@ fa-icon.smile{
 
 @media only screen and (max-width: 1000px) {
     .background:after{
-        height:35%;
+        height:45%;
     }
     .pawsMobile{
         margin-top:-0%
@@ -312,7 +312,7 @@ fa-icon.smile{
   }
   @media only screen and (max-width: 1000px) and (max-height:1000px){
     .background:after{
-        height:48%;
+        height:60%;
     }
   }
  @media only screen and (max-width: 900px){
@@ -321,7 +321,7 @@ fa-icon.smile{
  }
 @media only screen and (max-width: 800px) {
     .background:after{
-        height:45%;
+        height:55%;
 }
 .notMobile{
     display:none !important;
@@ -347,7 +347,7 @@ fa-icon.smile{
   }
   @media only screen and (max-width: 800px) and (max-height:1000px) {
     .background:after{
-        height:60%;
+        height:70%;
 }
 
   }
@@ -373,13 +373,13 @@ fa-icon.smile{
   }
   @media only screen and (max-width: 400px){
     .background:after{
-        height:50%;
+        height:60%;
     }
 
   }
   @media only screen and (max-width: 400px) and (max-height:800px){
     .background:after{
-        height:70%;
+        height:80%;
          
     }
 
